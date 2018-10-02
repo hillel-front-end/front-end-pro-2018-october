@@ -1,80 +1,43 @@
 console.log("Lection 1");
 
+// str = prompt();
+// console.log(typeof str);
 
-x = 10;
+// typeof
 
-// console.log(typeof x, typeof 20, typeof 'Hello world');
+// console.log( typeof 10 );
+// console.log( typeof 'saayiue' );
 
-b = x + 20;
+// ------------------------------
 
-// jkbas = 2;
-// str1 = 'hello';
-// str2 = "fooBar";
+// x = +prompt();
+// y = +prompt();
 
-// console.log(b, str1, "SKJASDNLK", 10);
-
-// -----------------------------------------
-
-// a = 10;
-
-// b = -20;
-
-// res = a + b;
+// res = x + y;
+// res = x - y;
+// res = x * y;
 // console.log(res);
 
-// res = a - b;
-// console.log(a - b);
 
-// res = a * b;
+// ------------------------------
+
+a = 2;
+// res = a + 10 + +prompt();
+
 // console.log(res);
 
-// res = a / b;
-// console.log(res);
-
-// -------------------------------------------
-
-
-x = 30; // присвоить значение
-y = '345';
+console.log( '10' + 12  );
+console.log( '10' - 12  );
+console.log( '10' * 12  );
+console.log( '10' / 12  );
+console.log( '10' % 12  );
 
 // приведение типов
-// console.log('x - y =', x - y );
-// console.log('x * y =', x * y );
-// console.log('x / y =', x / y );
 
-// // 1 parseInt()
-// newY = parseInt(y);
+console.log( +'10' + 12  );
+console.log( parseInt('10') + 12  );
 
-// // 2 унарные операторы
+// true false == === < > <= >= ! && ||
+// if (){} else {}
 
-// // x + (-1)*(x + y) => x + (-x - y) => x - x - y
-// z = '-20';
-// // +'20' => (+1)*'20' => (+1)*20 => 20
-// console.log( +z );
-
-
-// console.log('x + y =', x + +y );
-
-
-
-// --------------------
-
-// alert(newY);
-// res = +prompt('Input X', '100');
-// res2 = +prompt()
-// console.log(res + res2)
-
-
-// ----------------- %
-
-// boolean => 1, 0 // true, false
-
-console.log( 10 > 5 );
-console.log( 10 < 5 );
-console.log( 10 >= 5 );
-console.log( 10 <= 5 );
-console.log( 10 == 5 );
-console.log( 10 != 5 );
-
-
-
+document.write(a);
