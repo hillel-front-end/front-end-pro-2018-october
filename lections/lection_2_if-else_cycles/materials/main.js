@@ -95,6 +95,31 @@ console.log("Lection_2");
 
 // -------------------------------
 
-for(i = 0, j = 5; (i < 10 && j > 0); i++, j+=40){
-    console.log(i, j);
-}
+// for(i = 0, j = 5; (i < 10 && j > 0); i++, j+=40){
+//     console.log(i, j);
+// }
+
+// -------------------------------
+
+// a = +prompt();
+// b = +prompt();
+
+// if (a < b){
+
+//     for(i = a; i <= b; i++){
+//         if (i % 2 == 0){
+//            console.log( i*i ); 
+//         }
+//     }
+// }
+
+// -------------------------------
+
+do {
+    a = +prompt();
+    isError = isNaN(a);
+
+    if(isError){
+        console.log('a in not number, retry');
+    }
+} while(isError);
