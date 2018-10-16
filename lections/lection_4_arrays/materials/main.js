@@ -14,6 +14,8 @@ console.log('Lection_4');
 //     }
 // }
 
+// Math.floor(Math.random()*66 - 20)
+
 // console.log(B);
 
 // ---------------------------------
@@ -21,9 +23,9 @@ console.log('Lection_4');
 // arrays in js
 
 
-arr = [7, 6,8 ,4,89 ,5 ,4,7 ,75 ,76];
+// arr = [7, 6,8 ,4,89 ,5 ,4,7 ,75 ,76];
 
-console.log(arr)
+// console.log(arr)
 // arr.length = 100;
 // console.log(arr)
 // arr.length = 5;
@@ -36,12 +38,41 @@ console.log(arr)
 // }
 
 
-arr[20] = 'INNER';
+// arr[20] = 'INNER';
 
-console.log(arr)
+// console.log(arr)
 
 // ------------------------------
 
 // A = new Array(30);
-A = new Array(30, 10);
+// A = new Array(30, 10);
+// console.log(A)
+
+// ----------------------------
+
+// n = +prompt();
+n = 5;
+m = 6;
+A = new Array(n);
+B = new Array(m);
+
+for(i = 0 ; i < A.length; i++) {
+    A[i] = Math.floor(Math.random()*66 - 20);
+}
+
+for(i = 0 ; i < B.length; i++) {
+    B[i] = Math.floor(Math.random()*66 - 20);
+}
+
 console.log(A)
+console.log(B)
+
+for(i = 0 ; i < A.length; i++) {
+     item = A[i];
+
+     for(j = 0; j < B.length; j++){
+        if(B[j] == item){
+            document.write(B[j] + "<br />");
+        }
+     }
+}
