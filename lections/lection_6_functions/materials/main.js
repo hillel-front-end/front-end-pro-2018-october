@@ -77,9 +77,9 @@ console.log('Lection_6');
 // ----------------------------------------------
 
 
-function getRand(min, max) {
-    return Math.floor(Math.random()*(max - min) + min);
-}
+// function getRand(min, max) {
+//     return Math.floor(Math.random()*(max - min) + min);
+// }
 
 
 // console.log( getRand(0, 23) + getRand(-5, 89) + getRand(0, 2) );
@@ -88,3 +88,33 @@ function getRand(min, max) {
 // list = [1, 2, 3].concat([7, 5, 2, 3])
 
 // item = [2, 7, 9, 8].pop();
+
+
+// ----------------------------------------------
+function getRand(min, max) {
+    return Math.floor(Math.random()*(max - min) + min);
+}
+
+function getRandomArray() {
+    var arr = [];
+    arr.length = +prompt('length');
+    var min = +prompt('min');
+    var max = +prompt('max')
+
+    for(var i = 0; i < arr.length; i++){
+        arr[i] = getRand(min, max);
+    }
+
+    console.log(i)
+
+    return arr;
+}
+
+for(i = 10; i<=12; i++){
+    getRandomArray();
+}
+
+
+// console.log(newArray) 
+
+console.log(arr)

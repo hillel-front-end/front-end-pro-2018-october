@@ -3,6 +3,7 @@
 * http://learn.javascript.ru/function-declaration-expression
 * https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Functions
 * https://myrusakov.ru/javascript-closures.html
+* Подготовиться к тесту
 
 # Практика
 
@@ -25,6 +26,6 @@
         console.log(filter(input, isEven)); // [2, 4, 6]
 # Лекция
 
-1) Написать функцию вывода одномерного массива через разделитель в документ. (без)
+1) Написать функцию вывода одномерного массива через разделитель в документ. (без разделителя)
 
 2) Написать функцию заполнения одномерного массива с указанием длины. Запрос за длину массива и диапазон произвести внутри функции
