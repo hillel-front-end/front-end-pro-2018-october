@@ -54,11 +54,12 @@ assignObjects({...}, {...}, false);
 
 
 2.
-    Написать методы push, pop, split самостоятельно.
+    Написать методы push, join, reverse самостоятельно.
     Их функциональность должна соответствовать стандартным методам массивов.
 
     list.myPush();
-    list.mySplit();
+    list.myJoin();
+    list.myReverse();
     ...
 
     
