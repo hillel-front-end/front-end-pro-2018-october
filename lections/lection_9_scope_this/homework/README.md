@@ -17,6 +17,16 @@
 `copy(buffer)` получает параметром название ключа buffer (string) и добавляет его к `obj`
 Далее в любом порядке можно вызывать комбинации функций 
 
+*
+Создать метод `target(property)`- дальнейшие действия функций doFunction() и clear() будут изменять значение не result, а переданной `property`
+
+Пример:
+        obj
+        .doFunction(sum, 2, 4)
+        .copy('some_name')
+        .target('some_name')
+        .doFunction(mul, 6, 3)
+
 ## <hr />
 
 2) Дана строка вида &#39;var_text_hello&#39;. Сделайте из него текст &#39;varTextHello&#39;.
