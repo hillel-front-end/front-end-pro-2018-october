@@ -68,3 +68,4 @@ console.log('hello world')
 console.log('fooo')
 console.log('23');
 console.log(24);
+console.log('master')
