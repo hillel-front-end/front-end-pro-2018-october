@@ -54,3 +54,15 @@ list.x = 0;
 // Object.assign(list, { z: 200, y: 5 }, { f: 'sas' })
 console.log(list);
 console.log(fofoData);
+
+
+
+
+
+var x = 200;
+console.log(x);
+
+//  ----------------------------------
+
+console.log('hello world')
+console.log('fooo')
