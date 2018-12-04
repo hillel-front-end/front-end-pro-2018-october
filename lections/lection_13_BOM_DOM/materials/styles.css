@@ -1,0 +1,17 @@
+.block {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#foo {
+
+}
+
+.block li {
+    
+}
+
+#foo.block div ~ * {
+    color: red;
+}
