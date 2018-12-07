@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.block {
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    position: fixed;
+
+    left: 243px;
+    top: 128px;
+
+    transition: .1s;
+}
+
+.block.animate {
+    width: 100px;
+    font-size: 18px;
+}
