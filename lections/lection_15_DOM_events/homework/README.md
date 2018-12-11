@@ -1,5 +1,7 @@
 # Изучить материал
++ https://learn.javascript.ru/keyboard-events
 + https://learn.javascript.ru/multi-insert
+
 + https://learn.javascript.ru/attributes-and-custom-properties
 + https://learn.javascript.ru/traversing-dom
 + https://learn.javascript.ru/events-and-timing-depth
@@ -11,7 +13,7 @@
 
 1) Создать персонажа игры-платформера.
 	При нажатии на пробел - прыжок вверх на `h` пикселей.
-	При нажатии на стрелку -> передвижение персонажа на `step` пикселей в сторону (и остальные стрелки)
+	При нажатии на стрелку -> передвижение персонажа на `step` пикселей в сторону (и остальные стрелки) // event.keyCode
 	
 	Персонаж - это квадрат, имеющий размеры 100 на 100 пикселей.
 	Прыжок - это анимация движения объекта вверх на `h` пикселей и возврат в изначальное положение (до прыжка)
@@ -33,7 +35,7 @@
 					handler: 'ActionAdd'
 				},
 				{
-					title: 'title 2',,
+					title: 'title 2',
 					handler: 'ActionSaveAs'
 					items: [
 						{ title: 'inner 1' }, { title: 'inner 2' }
