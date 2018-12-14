@@ -9,18 +9,45 @@
     <script src="./main.js"></script>
 </head>
 <body>
-    <form action="send.php">
-        <input type="text" name="text" id="">
-        <input type="submit" value="Send">
-    </form>
+    <div class="container">
 
-    <button id="click">
-        Click
-    </button>
+    </div>
 
-    <div class="menu pattern">
-        <div class="menu__item pattern"><span>&rarr;</span>
-            <span class="menu__title"></span>
-        </div></div>
+    <style>
+        .block {
+            height: 150px;
+            border: 2px solid black;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .container {
+            position: fixed;
+            left: 0;
+            top: 0;
+            border: 2px solid seagreen;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .container li {
+            border-bottom: 1px solid greenyellow;
+            padding: 5px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .container li:hover {
+            background-color: rgba(123, 67, 149, 0.4);
+        }
+
+        .container ul li:last-child {
+            border-bottom: 0;
+        }
+
+        .container.hidden {
+            display: none;
+        }
+    </style>
 </body>
 </html>
