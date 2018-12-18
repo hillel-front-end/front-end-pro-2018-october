@@ -1,4 +1,4 @@
-# front-end-pro-2018-october
+# front-end-pro-2018-august
 
 sychov.saveliy@gmail.com
 
@@ -120,23 +120,23 @@ bblablad (Skype)
 + Cookie
 + WebStorage
 
-## lection_18_Promises_async-await
+## lection_18_functions_call_apply-practice
+
++ Изменения контекста call(), apply(), bind()
++ Одалживание методов
++ Каррирование
+
+## lection_19_Promises_async-await
 
 + Promises
 + async function
 
-## lection_19_AJAX_WebServer
+## lection_20_AJAX_WebServer
 
 + JSON
 + AJAX основы
 + GET/POST
 + NodeJS server
-
-## lection_20_functions_call_apply-practice
-
-+ Изменения контекста call(), apply(), bind()
-+ Одалживание методов
-+ Каррирование
 
 ## lection_21_ES6
 

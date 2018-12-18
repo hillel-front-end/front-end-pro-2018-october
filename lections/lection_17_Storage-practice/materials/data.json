@@ -1,0 +1,10 @@
+{
+    "name": "Vasya",
+    "age": 23,
+    "adress": {
+        "city": "Kiev",
+        "list": [
+            1, 2, 3
+        ]
+    }
+}
