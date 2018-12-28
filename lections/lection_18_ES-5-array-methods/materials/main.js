@@ -49,7 +49,7 @@ returnedValue = list.map(function(item, pos, source){
     return '';
 });
 
-console.log(returnedValue);
+// console.log(returnedValue);
 
 // ---------------------------------------------------
 
@@ -83,5 +83,25 @@ var sum = filtredData.reduce(function(prev, item){
     return prev + item.price;
 }, 0);
 
-console.log(sum, sum/data.length);
+// console.log(sum, sum/data.length);
 
+
+// ----------------------------------------
+
+var match ="hello";
+var list = ["1234hello", "hellohd;lfmg", "45yu89egrhellowegojih", "dfhghello", ",bnsdklb"]
+
+
+var matches = list.reduce(function(prev, item){
+    // var pos = item.indexOf(match);
+    // if(pos == -1) { return prev; }
+
+    // return prev.concat(pos);
+
+    // ------------------
+
+    var pos = item.indexOf(match);
+    return pos >= 0 ? prev.concat(pos) : prev;
+}, []).join(',');
+
+console.log(matches);
