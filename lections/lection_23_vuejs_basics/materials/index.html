@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <!-- <div id="app">
+        {{ message }}
+        <hr>
+        <hr />
+        {{ list[1] }}
+        
+        {{ info }}
+        <span>{{ info.age }}</span> 
+        {{ message * info.age + 10 }}
+        <hr />
+    </div>  -->
+
+  <!-- <hr />
+    <div id="app-2">
+        {{ className }}
+        <span 
+            v-bind:title="className"
+            v-bind:style="appearence">
+            span inner text
+        </span>
+        <span 
+            :style="appearence + 'font-size:' + value + 'px'"
+            :title="appearence">
+            span inner text
+        </span>
+        <span title="active">
+
+        </span>
+    </div>
+
+    <hr /> -->
+<!-- 
+    <div id="app-3">
+        <span v-if="seen">Сейчас меня видно</span>
+    </div> -->
+ 
+    <!-- <hr />
+
+    <div id="app-4">
+        <ol>
+            <li v-for="item in list"
+                v-if="item.text">
+                {{ item.text }}
+            </li>
+        </ol>
+        <table border="1">
+            <tr v-for="value in arr">
+                <td>{{ value }}</td>
+            </tr>
+        </table>
+    </div> -->
+
+    <hr>
+    <div id="app-5">
+        <span>
+            {{ calculate(8) }}
+        </span>
+        <!-- <button v-on:click="Click">
+            Click
+        </button> -->
+        <button 
+            v-for="(value, index) in list"
+            @mousemove="mouseover"
+            @click="Click($event, value, index)">
+            Click {{ getValue() }}
+        </button>
+    </div>
+
+    <hr>
+
+     <div id="app-6">
+        <p>{{ message }}</p>
+        <input v-model="message">
+        <input type="checkbox" v-model="switcher">
+        <input type="date" />
+        <hr>
+        <span>
+            {{ date }}
+        </span>
+    </div>
+<!--
+    <hr>
+
+    <hr>
+
+    <hr>  -->
+
+    <!-- <hr>
+    -->
+    <script src="./main.js"></script>
+</body>
+</html>
