@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- <div class="step" v-if="page['step-1']">
+            Form 1
+
+            <button @click="nextStep(1)">
+                {{ 1 < page.count ? 'Next' : 'Close' }}
+            </button>
+        </div>
+        <div class="step" v-if="page['step-2']">
+            Form 2
+
+            <button @click="nextStep(2)">
+                {{ 2 < page.count ? 'Next' : 'Close' }}
+            </button>
+        </div> -->
+
+        <div 
+            class="step" 
+            v-for="step in page.count"
+            v-if="page[`step-${step}`]"
+            >
+                Form {{step}}
+
+                <input 
+                    :type="inputsForPages[`step-${step}`].type"
+                    :value="inputsForPages[`step-${step}`].defaultValue"
+                    v-model="inputsForPages[`step-${step}`].model"
+                    @keypress="onEnter($event, step)">
+
+                <button @click="nextStep(step)">
+                    {{ step < page.count ? 'Next' : 'Close' }}
+                </button>
+        </div>
+
+        <div class="final-results" v-if="isResultsShow">
+            <div v-for="res in inputsForPages">
+                <span>
+                   {{res.name}} = {{ res.model }}
+                </span>
+            </div>
+        </div>
+    </div> 
+
+    <script src="./main.js"></script>
+</body>
+</html>

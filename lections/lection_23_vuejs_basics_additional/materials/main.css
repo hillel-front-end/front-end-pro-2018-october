@@ -1,0 +1,14 @@
+.step {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+}
+
+.step button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
