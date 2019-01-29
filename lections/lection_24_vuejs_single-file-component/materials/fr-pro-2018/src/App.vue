@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     
-    <img alt="Vue logo" src="./assets/logo.png">
+    <!-- <img alt="Vue logo" src="./assets/logo.png">
     {{ text }}
 
     <ul>
       <li v-for="(value, index) in list" :key="index">
         {{ value }}
       </li>
-    </ul>
+    </ul> -->
 
-    <Flag></Flag>
+    Outer
+    <input type="text" v-model="text">
+    <Flag :value="text" @transfer="onTransfer"></Flag>
+    RESULT value: {{ text }}
   </div>
 </template>
 
@@ -28,6 +31,11 @@ export default {
       list: [
         2, 2, 5, 9, 7
       ]
+    }
+  },
+  methods: {
+    onTransfer(value){
+      this.text = value;
     }
   }
 }
