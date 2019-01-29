@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    
+    <Header :value="passValue"></Header>
+    <Contact @chng="onChange"></Contact>
     <!-- <img alt="Vue logo" src="./assets/logo.png">
     {{ text }}
 
@@ -10,30 +11,38 @@
       </li>
     </ul> -->
 
-    Outer
+    <!-- Outer
     <input type="text" v-model="text">
     <Flag :value="text" @transfer="onTransfer"></Flag>
-    RESULT value: {{ text }}
+    RESULT value: {{ text }} -->
   </div>
 </template>
 
 <script>
 import Flag from './components/Flag';
+import Header from './components/Header';
+import Contact from './components/Contact';
 
 export default {
   name: 'app',
   components: {
-    Flag
+    Flag,
+    Header,
+    Contact
   },
   data(){
     return {
       text: 'Hello world!',
       list: [
         2, 2, 5, 9, 7
-      ]
+      ],
+      passValue: ''
     }
   },
   methods: {
+    onChange(value){
+      this.passValue = value;
+    },
     onTransfer(value){
       this.text = value;
     }
