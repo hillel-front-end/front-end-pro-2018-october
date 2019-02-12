@@ -45,11 +45,11 @@ var str = "Hello wor! world w-d! 56.38456 ggsdg wolrd 5678.23 123213. How helloi
 // -----------------
 // . ? [ ] { } & ^ \ / |
 // \. \? \/ \& \|
-var str = `How are \\ \\ //\\\\ | yo hello.foo u \n \t \s \f [123] [123}`;
-// var result = str.match(/\[\d{3}\]/gi);
-// var result = str.match(/\/\/\\\\/g);
-var result = str.match(/hello\.foo/g);
-console.log(result)
+// var str = `How are \\ \\ //\\\\ | yo hello.foo u \n \t \s \f [123] [123}`;
+// // var result = str.match(/\[\d{3}\]/gi);
+// // var result = str.match(/\/\/\\\\/g);
+// var result = str.match(/hello\.foo/g);
+// console.log(result)
 
 // ----------------------------
 
@@ -85,22 +85,16 @@ console.log(result)
 var str = `
 <br />
 <input />
-<img />
+<img src="hello" />
 e
-qwe
-qwe
-qw
 eqw
-<table>
-    <tr></tr>
-</table>
+<table><img /><div>asdasdasd</div><div>asdasd</div><div></div></table>
 <div></div>
+<div>3346</div>
 qwe
 qwe
 qwe
-qw
-eqw
-e
-wq
+`;
 
-`
+// console.log( str.match(/<[\w\s="']+\/?>/gi) );
+console.log( str.match(/<[-\w\s="']+>((<[- \w]+>.*?<\/[\w ]+>)|(\w+)|(<[\w\s="']+\/?>))*?<\/[\w ]+>/gi) );
